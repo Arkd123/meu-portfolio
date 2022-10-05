@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+
+}
+
+
+#aplicativos {
+    background-color: rgb(0, 0, 95);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.miniaturas {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.titulo-sessao {
+    color: white;
+    font-size: 35px;
+}
+
+#jogos {
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.item p {
+     margin-top: 15px;
+     color: white;
+     font-size: 20px;
+     
+}
