@@ -8,12 +8,44 @@
     <title>Portfólio Pessoal</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- bootstrap -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- script js -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+
+    <nav class="navbar-inverse myNavbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                Pedro Angelo
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#aplicativos">aplicativos</a>
+                </li>
+                <li>
+                    <a href="#jogos">jogos</a>
+                </li>
+                <li>
+                    <a href="#chatbot">chatbot</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <h1>
             Meu Portfólio Pessoal
@@ -31,38 +63,73 @@
                     src="https://studio.code.org/projects/applab/1QEvaR6F0iXIJIg4dEFpG6gKjr4diAHuSTeNA-Oe4DM/embed"></iframe>
             </div>
         </section>
-        <section id="jogos" >
+        <section id="jogos">
             <h2 class="titulo-sessao">
                 Jogos
             </h2>
             <div class="linha"></div>
-            <div class="carousel slide" id="meuCarrossel">
+            <div id="myCarousel" class="carousel slide">
 
                 <div class="carousel-inner">
-                    <a class="left carousel-control" href="#meuCarrossel" data-slide="anterior">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <div class="item active">
-                        <iframe width="440" height="757" style="border: 0px;"
-                            src="https://studio.code.org/projects/gamelab/et6WU3VcnOieMxdnCYNPQ9AV5lFYRnT_eT8fm15EueA/embed"></iframe>
 
-                        <p>
+
+                    <div class="item active">
+
+                        <a href="https://studio.code.org/projects/gamelab/et6WU3VcnOieMxdnCYNPQ9AV5lFYRnT_eT8fm15EueA"
+                            target="_blank">
+                            <img src="imagens/game1.png" alt="" class="imagem">
+                        </a>
+                        <p class="nome-jogo">
                             Jogo dos carros
                         </p>
                     </div>
                     <div class="item">
-                        <iframe width="440" height="757" style="border: 0px;"
-                            src="https://studio.code.org/projects/gamelab/5P92XvPheOp3jaQNtv2pgqkYyKlEZO6qp80-HO0qkPk/embed"></iframe>
 
-                        <p>
+                        <a
+                            href="https://studio.code.org/projects/gamelab/5P92XvPheOp3jaQNtv2pgqkYyKlEZO6qp80-HO0qkPk/embed" target="_blank">
+                            <img src="imagens/game2.png" alt="" class="imagem">
+                        </a>
+
+
+                        <p class="nome-jogo">
                             Jogo do astronauta
                         </p>
                     </div>
-                    <a class="right carousel-control" href="#meuCarrossel" data-slide="proximo">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+
+                    <div class="item">
+
+
+                        <a href="https://studio.code.org/projects/playlab/2vtEFm230FcC_1x46tiiIeiJIF8qNcLk3f_3WxEi9jA" target="_blank">
+                            <img src="imagens/game3.PNG" alt="" class="imagem">
+                        </a>
+
+                        <p class="nome-jogo">
+                            Pegue a torta
+                        </p>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://studio.code.org/projects/playlab/5RC7lAqNwm6nBWnmUVZAm1y7WiY2XXqOwO_Iw9LnGWQ" target="_blank">
+                            <img src="imagens/game4.PNG" alt="" class="imagem">
+                        </a>
+
+                        <p class="nome-jogo">
+                            Verificador de senha
+                        </p>
+                    </div>
+
 
                 </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <!--provide class "glyphicon glyphicon-chevron-right" for the span tag below-->
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </section>
         <section id="chatbot">
